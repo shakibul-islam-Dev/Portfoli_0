@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io5";
+import Logo from "../Animated/Logo";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navigation = () => {
       {/* Desktop Nav */}
       <nav className="hidden sm:flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-extrabold tracking-tight">shakibul!</h1>
+          <Logo></Logo>
         </div>
         <ul className="flex items-center gap-8 text-lg font-medium">
           {navLinks.map((link) => (
@@ -57,8 +58,7 @@ const Navigation = () => {
 
       {/* Mobile Nav */}
       <nav className="sm:hidden flex items-center justify-between py-4">
-        <h1 className="text-2xl font-bold">SHakil</h1>
-
+        <Logo></Logo>
         <Button
           isIconOnly
           variant="light"
