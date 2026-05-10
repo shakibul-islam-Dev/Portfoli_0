@@ -13,7 +13,7 @@ const Navigation = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { name: "Home", href: "/home" },
+    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Tech Stack", href: "/techstack" },
     { name: "Projects", href: "/projects" },
@@ -21,9 +21,9 @@ const Navigation = () => {
   ];
 
   return (
-    <header className="container w-full mx-auto mt-6 px-4 sm:mt-10">
+    <header className=" container  w-full mx-auto bg-black mt-6 px-4 sm:mt-10">
       {/* Desktop Nav */}
-      <nav className="hidden sm:flex items-center justify-between">
+      <nav className="hidden  sm:flex items-center justify-between">
         <div>
           <Logo></Logo>
         </div>
@@ -70,7 +70,7 @@ const Navigation = () => {
 
         {/* Overlay Menu */}
         <div
-          className={`fixed inset-0 bg-white z-40 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
+          className={`fixed inset-0 bg-black z-40 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
             isOpen
               ? "opacity-100 visible"
               : "opacity-0 invisible translate-x-full"

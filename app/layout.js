@@ -22,8 +22,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={` ${poppinsFont.className}  h-full antialiased`}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={` ${poppinsFont.className}  bg-black  h-full antialiased`}
+    >
+      <body className=" bg-black  h-full antialiased">{children}</body>
     </html>
   );
 }

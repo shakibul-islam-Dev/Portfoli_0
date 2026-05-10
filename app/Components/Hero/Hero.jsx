@@ -1,42 +1,28 @@
 "use client";
 
+import HeroAni from "./HeroAni";
+
+import HeroText from "./HeroText";
+
+// Hero component-er bhitore HeroAni-ke dynamic import koro
+
 const Hero = () => {
   return (
-    <section className="container flex flex-col-reverse sm:flex-row items-center justify-between ">
-      <div className="text-7xl font-bold">
-        <h1>hi!</h1>
-        <h1>My Name is</h1>
-        <h1>Shakibul Islam</h1>
-        <h1>hi!</h1>
-      </div>
-      <div>
-        <div>
-          <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z" />
-          </svg>
-          <svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="42"
-            fill="
-            red"
-            viewBox="0 0 24 24"
-          >
-            <path d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z" />
-          </svg>
-        </div>
-      </div>
-    </section>
+    <>
+      <section className="container flex bg-black flex-col-reverse sm:flex-row items-center justify-between mt-10 p-10">
+        <HeroText></HeroText>
+        <HeroAni className={"rounded-b-md"}></HeroAni>
+      </section>
+
+      {/* <Html5Icon></Html5Icon>
+        <Css3Icon></Css3Icon>
+        <TailWindIcon></TailWindIcon>
+        <ReactIcon></ReactIcon>
+        <Nextjs></Nextjs>
+        <NodejsIcon></NodejsIcon>
+        <ExpressIcon></ExpressIcon>
+        <GithubIcon></GithubIcon> */}
+    </>
   );
 };
 
