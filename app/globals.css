@@ -93,12 +93,12 @@
 
   html,
   body {
-    /* পুরো পেজ কালো করার চূড়ান্ত কমান্ড */
     background-color: black !important;
     color: white;
     @apply bg-background text-foreground;
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
 }

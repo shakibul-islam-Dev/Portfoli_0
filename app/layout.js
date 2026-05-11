@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={` ${poppinsFont.className}  bg-black  h-full antialiased`}
     >
-      <body className=" bg-black  h-full antialiased">{children}</body>
+      <body className="  bg-black  h-full antialiased">{children}</body>
     </html>
   );
 }
