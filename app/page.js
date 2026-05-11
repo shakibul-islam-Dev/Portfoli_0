@@ -8,14 +8,18 @@ import Footer from "./Footer/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans dark:bg-black">
-      <Navigation></Navigation>
-      <Hero></Hero>
-      <AboutMe></AboutMe>
-      <TechStack></TechStack>
-      <ProjectSection></ProjectSection>
-      <ContactInfo></ContactInfo>
-      <Footer></Footer>
+    <div className="flex flex-col min-h-screen font-sans dark:bg-black">
+      <Navigation />
+
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Hero />
+        <AboutMe />
+        <TechStack />
+        <ProjectSection />
+        <ContactInfo />
+      </main>
+
+      <Footer />
     </div>
   );
 }
