@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="relative w-full h-full rounded-full border-2 border-zinc-800 overflow-hidden bg-zinc-900 shadow-2xl">
             {/* আপনার ছবি এখানে যোগ করবেন */}
             <Image
-              src="/path-to-your-photo.jpg" // public ফোল্ডারে আপনার ছবি রেখে এখানে পাথ দিন
+              src="/profilepic.png" // public ফোল্ডারে আপনার ছবি রেখে এখানে পাথ দিন
               alt="Shakibul Islam"
               fill
               className="object-cover"
