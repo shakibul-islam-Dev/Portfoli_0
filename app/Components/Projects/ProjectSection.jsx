@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { SiGithub } from "react-icons/si";
 
@@ -10,32 +9,38 @@ const projects = [
     id: 1,
     title: "SunCart - E-commerce",
     description:
-      "A seasonal e-commerce platform with authenticated profile pages and product detail routes.",
+      "A seasonal e-commerce platform with authenticated profile pages.",
     techStack: "Next.js, MongoDB, Better Auth",
-
-    liveLink: "#",
-    githubLink: "#",
-    slug: "suncart",
+    image: "https://your-image-url-here.png", // এখানে তোমার ইমেজের লিঙ্ক দাও
+    liveLink: "https://sun-cart-hdlk.vercel.app",
+    githubLink: "https://github.com/shakibul-islam-Dev/SunCart",
   },
   {
     id: 2,
-    title: "Working On it",
-    description: "Comming Soon",
-    techStack: "Next.js, MongoDB, Better Auth",
-
-    liveLink: "#",
-    githubLink: "#",
-    slug: "suncart",
+    title: "Authentication System",
+    description: "A secure authentication system implementation.",
+    techStack: "Next.js, Better Auth, Tailwind CSS",
+    image: "https://your-image-url-here.png",
+    liveLink: "https://authsytem.vercel.app",
+    githubLink: "https://github.com/shakibul-islam-Dev/SunCart",
   },
   {
     id: 3,
-    title: "Working On it",
-    description: "Comming Soon",
-    techStack: "Next.js, MongoDB, Better Auth",
-
-    liveLink: "#",
-    githubLink: "#",
-    slug: "suncart",
+    title: "Tobarok",
+    description: "A specialized platform for community services.",
+    techStack: "Next.js, React, Tailwind CSS",
+    image: "https://your-image-url-here.png",
+    liveLink: "https://tobarok.vercel.app",
+    githubLink: "https://github.com/shakibul-islam-Dev/Tobarok",
+  },
+  {
+    id: 4,
+    title: "Chat App",
+    description: "A real-time messaging application.",
+    techStack: "Next.js, Socket.io, Tailwind",
+    image: "https://your-image-url-here.png",
+    liveLink: "https://chat-app-ashen-theta-53.vercel.app",
+    githubLink: "https://github.com/shakibul-islam-Dev/ChatApp",
   },
 ];
 
@@ -58,22 +63,20 @@ export default function ProjectSection() {
               key={project.id}
               className="group bg-zinc-900/40 rounded-3xl overflow-hidden border border-zinc-800 hover:border-zinc-500 transition-all duration-300 flex flex-col"
             >
-              {/* Next.js Image Tag ব্যবহার */}
-              <div className="relative h-56 md:h-64 w-full overflow-hidden">
-                {/* <Image
+              <div className="relative h-56 md:h-64 w-full overflow-hidden bg-zinc-800">
+                <Image
                   src={project.image}
                   alt={project.title}
                   fill
+                  unoptimized
                   className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                /> */}
+                />
               </div>
 
               <div className="p-6 md:p-8 flex flex-col grow">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
-
                 <p className="text-zinc-400 text-sm mb-6 line-clamp-3">
                   {project.description}
                 </p>
@@ -89,6 +92,7 @@ export default function ProjectSection() {
                       <a
                         href={project.liveLink}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm"
                       >
                         <FaExternalLinkAlt size={14} /> Live
@@ -96,19 +100,22 @@ export default function ProjectSection() {
                       <a
                         href={project.githubLink}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm"
                       >
                         <SiGithub size={18} /> Code
                       </a>
                     </div>
-
-                    <Link
-                      href={`/projects/${project.slug}`}
+                    {/* ডিটেইলস বাটন এখন সরাসরি লাইভ লিংকে যাবে, তাই কোনো 404 হবে না */}
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-1 text-blue-500 hover:text-blue-400 font-bold text-sm transition-all group/btn"
                     >
                       Details{" "}
                       <HiArrowLongRight className="text-xl transition-transform group-hover/btn:translate-x-1" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
