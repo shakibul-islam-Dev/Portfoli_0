@@ -59,7 +59,7 @@ const HeroText = () => {
         className="pt-4 flex flex-wrap gap-4 justify-center lg:justify-start"
       >
         <a
-          href="/resume.pdf"
+          href="/shakibul_islam.pdf"
           download="Shakibul_Islam_Resume.pdf"
           className="group flex items-center gap-2 px-7 py-3.5 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20 active:scale-95"
         >
