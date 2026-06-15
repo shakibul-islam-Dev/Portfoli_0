@@ -9,35 +9,28 @@ const projects = [
     id: 1,
     title: "SunCart - E-commerce",
     description:
-      "A seasonal e-commerce platform with authenticated profile pages.",
+      "A seasonal Idea Shareing platform with authenticated profile pages.",
     techStack: "Next.js, MongoDB, Better Auth",
-    image: "https://your-image-url-here.png", // এখানে তোমার ইমেজের লিঙ্ক দাও
-    liveLink: "https://sun-cart-hdlk.vercel.app",
-    githubLink: "https://github.com/shakibul-islam-Dev/SunCart",
+    image: "/IdeaVault.png",
+    liveLink: "https://ideavault1-ten.vercel.app/",
+    githubLink: "https://github.com/shakibul-islam-Dev/ideavault1",
   },
   {
     id: 2,
-    title: "Authentication System",
-    description: "A secure authentication system implementation.",
+    title: "Job Portals",
+    description:
+      "HireLoop is a full-featured job hunting portal that bridges the gap between job seekers and employers. It streamlines job discovery, application management, and company recruitment — all in one platform.",
     techStack: "Next.js, Better Auth, Tailwind CSS",
-    image: "https://your-image-url-here.png",
-    liveLink: "https://authsytem.vercel.app",
-    githubLink: "https://github.com/shakibul-islam-Dev/SunCart",
+    image: "/Hireloop.png",
+    liveLink: "https://hireloopjobs.vercel.app",
+    githubLink: "https://github.com/shakibul-islam-Dev/hireloop",
   },
+
   {
     id: 3,
-    title: "Tobarok",
-    description: "A specialized platform for community services.",
-    techStack: "Next.js, React, Tailwind CSS",
-    image: "https://your-image-url-here.png",
-    liveLink: "https://tobarok.vercel.app",
-    githubLink: "https://github.com/shakibul-islam-Dev/Tobarok",
-  },
-  {
-    id: 4,
     title: "Chat App",
     description: "A real-time messaging application.",
-    techStack: "Next.js, Socket.io, Tailwind",
+    techStack: "Next.js, Web Socket, Tailwind",
     image: "https://your-image-url-here.png",
     liveLink: "https://chat-app-ashen-theta-53.vercel.app",
     githubLink: "https://github.com/shakibul-islam-Dev/ChatApp",
@@ -53,7 +46,7 @@ export default function ProjectSection() {
             Projects
           </h2>
           <p className="text-lg md:text-xl text-zinc-400">
-            Things I've built so far
+            Things I&apos;ve built so far
           </p>
         </div>
 
@@ -106,7 +99,7 @@ export default function ProjectSection() {
                         <SiGithub size={18} /> Code
                       </a>
                     </div>
-                    {/* ডিটেইলস বাটন এখন সরাসরি লাইভ লিংকে যাবে, তাই কোনো 404 হবে না */}
+
                     <a
                       href={project.liveLink}
                       target="_blank"

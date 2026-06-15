@@ -13,7 +13,7 @@ const HeroText = () => {
         animate={{ opacity: 1, y: 0 }}
         className="text-lg md:text-xl font-medium text-blue-500 tracking-wide"
       >
-        👋 Hello, I'm
+        👋 Hello, I&apos;m
       </motion.h3>
 
       {/* টাইপরাইটার হেডিং - Overlapping solve korar main area */}
